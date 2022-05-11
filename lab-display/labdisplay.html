@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="labdisplay.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="list row m-5">
+        <div class="col-md-8">
+            
+        </div>
+        <div class="col-md-8">
+            <h4>List of Results</h4>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Signs and Symptoms</th>
+                    <th scope="col">Test</th>
+                    <!-- <th scope="col">Condition</th>              -->
+                    <th scope="col">Disease Found</th>
+                    <th scope="col">Type of Patient</th>
+                </tr>
+                </thead>
+                <tbody class="" *ngFor="let dataForm of dataForm; let i = index"  [class.active]="i == currentIndex" (click)="setActiveDataForm(dataForm, i)">
+                    <tr>
+                        <th scope="row">{{ dataForm.id }}</th>
+                        <td>{{ dataForm.age }}</td>
+                        <td>{{ dataForm.gender }}</td>
+                        <td>{{ dataForm.signs_and_symptoms }}</td>
+                        <td>{{ dataForm.test }}</td>
+                        <!-- <td>{{ dataForm.condition }}</td> -->
+                        <td>{{ dataForm.disease_found }}</td>
+                        <td>{{ dataForm.patient_type }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <app-about></app-about>
+    
+</body>
+</html>

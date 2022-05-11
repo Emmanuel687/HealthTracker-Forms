@@ -1,0 +1,36 @@
+.submit-form {
+    max-width: 400px;
+    margin: 20px;
+}
+
+.card {
+    width: 80%;
+    margin: 100px;
+    border-radius: 10px;
+
+}
+
+.form-group{
+    width: 200%;
+    line-height: 45px;
+    padding-left: 200px;
+    align-self: center;
+    
+
+}
+
+#update{
+    padding-left: 200px;
+}
+
+.add-button{
+    padding-left: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 45px;
+}
+
+.title{
+    text-align: center;
+    padding-top: 30px;   
+}
